@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class UserItem extends Component {
+  static propTypes: { user: any; };
   render() {
     const { user } = this.props;
     console.log('user', user);

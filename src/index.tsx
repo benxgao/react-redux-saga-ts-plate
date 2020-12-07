@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from './App';
-import rootSaga from './sagas';
+import rootSaga from './sagas/index';
 import configureStore from './store/configureStore';
 
 const store = configureStore();
