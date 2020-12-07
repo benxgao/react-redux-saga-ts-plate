@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "checkJs": false,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "esModuleInterop": true,
+    // "lib": ["es6"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    // "noEmit": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "outDir": "./build",
+    // "rootDir": "./",
+    "pretty": true,
+    "sourceMap": true,
+    // "strict": true,
+    "target": "es2017"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/__tests__/**/*"
+  ]
+}

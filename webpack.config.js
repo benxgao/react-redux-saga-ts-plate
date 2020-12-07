@@ -9,7 +9,7 @@ module.exports = {
   mode: "development",
   devtool: 'inline-source-map',
   entry: {
-    main: [path.join(__dirname, 'src/index.js')]
+    main: [path.join(__dirname, 'src/index.tsx')]
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -28,12 +28,12 @@ module.exports = {
     // new ExtractTextPlugin("style.css"),
   ],
   resolve: {
-    extensions: ['.js', '.json', '.jsx', '.scss'],
+    extensions: ['ts', '.tsx', '.js', 'jsx', '.json', '.scss'],
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|tsx|js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
       },

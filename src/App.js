@@ -6,7 +6,7 @@ import {
   Route
 } from 'react-router-dom';
 import { hot } from 'react-hot-loader';
-import history from './history';
+import history from './history.ts';
 import Main from './views/Main';
 
 const App = () => (
